@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+@theme {
+  /* Calming earth tones: sage/forest greens + slate/teal blues */
+  --color-background: #f3f6f3;
+  --color-foreground: #1d2b25;
+
+  --color-card: #ffffff;
+  --color-card-foreground: #1d2b25;
+
+  --color-muted: #e6ede7;
+  --color-muted-foreground: #5a6b62;
+
+  --color-border: #d3ded6;
+  --color-input: #d3ded6;
+  --color-ring: #2f6f6f;
+
+  --color-primary: #2f6f6f; /* teal-green */
+  --color-primary-foreground: #f4faf8;
+
+  --color-secondary: #4f7d5b; /* sage green */
+  --color-secondary-foreground: #f4faf8;
+
+  --color-accent: #3a6f8f; /* slate blue */
+  --color-accent-foreground: #f4faf8;
+
+  /* Money semantics */
+  --color-income: #14110f; /* near-black for income / positive */
+  --color-expense: #b3261e; /* red for expenses / negative */
+
+  --color-positive: #2f7d54;
+  --color-warning: #b8742a;
+
+  --radius: 0.75rem;
+  --radius-lg: 1rem;
+  --radius-md: 0.625rem;
+  --radius-sm: 0.4rem;
+}
+
+* {
+  border-color: var(--color-border);
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-sans), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Soft scrollbars */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: #c2cfc6;
+  border-radius: 9999px;
+}
